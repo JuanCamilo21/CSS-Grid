@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie.Es</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        background: #f2f2f2;
+        padding: 32px 15px;
+        display: grid;
+        grid-template-columns: minmax(auto, 1024px);
+        justify-content: center;
+      }
+      .header {
+        background: white;
+        display: grid;
+        grid-template-columns: 50px 1fr 50% 1fr 60px 20px;
+        grid-template-areas: 'img-header titulo buscador nombre img-perfil';
+        justify-content: center;
+        align-items: center;
+        border-bottom: 5px solid rgb(235, 233, 233);
+      }
+      .titulo {
+        grid-area: titulo;
+        color: rgb(195, 0, 255);
+      }
+      .buscador {
+        align-items: center;
+        grid-area: buscador;
+      }
+      .nombre {
+        padding-right: 5px;
+        text-align: end;
+        grid-area: nombre;
+        font-weight: bold;
+      }
+      .img-header img {
+        grid-area: img-header;
+        max-width: 50px;
+      }
+      .header input {
+        justify-content: center;
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #a5a5a5;
+      }
+      .header input::placeholder {
+        color: #bbb8b8;
+        padding: 3px;
+      }
+      .img-perfil img {
+        grid-area: img-perfil;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      .flecha img {
+        width: 20px;
+        height: 20px;
+      }
+      .cuerpo {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-areas: 'left contenido';
+      }
+      .left {
+        grid-area: left;
+        background: rgb(195, 0, 255);
+        display: grid;
+        grid-template: repeat(2, 88px) / 1fr;
+        text-align: center;
+        padding: 10px 0;
+        height: 893px;
+      }
+      .left a {
+        color: white;
+        text-decoration: none;
+      }
+      .menu-lateral:nth-of-type(4) {
+        align-self: flex-end;
+      }
+      .post {
+        display: grid;
+        grid-area: contenido;
+        grid-template-columns: repeat(3, minmax(100px, 293px));
+        grid-gap: 15px;
+        justify-content: center;
+      }
+      .categoria {
+        padding-left: 10px;
+      }
+      .caja {
+        height: 390px;
+        background-image: url(/img/IMG_20200506_231333_424.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template: 120px/1fr;
+        align-content: flex-end;
+      }
+      .detalles {
+        color: white;
+        background: rgba(255, 0, 212, 0.5);
+        align-content: flex-end;
+      }
+      h3,
+      p {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER ----------------------------- -->
+      <div class="header">
+        <div class="img-header">
+          <img src="img/crispetas.jpg" alt="" />
+        </div>
+        <h1 class="titulo">Movi.es</h1>
+        <div class="buscador">
+          <input type="text" placeholder="Busca tu peli, actor, actriz o director favorito" />
+        </div>
+        <p class="nombre">Juan Camilo Moreno</p>
+        <div class="img-perfil">
+          <img src="img/IMG_20190906_161146355_HDR (1)ASCA.jpg" alt="" />
+        </div>
+        <div class="flecha">
+          <img src="/img/download.png" alt="" />
+        </div>
+      </div>
+
+      <div class="cuerpo">
+        <!-- MENU LATERAL------------------------------ -->
+        <div class="left">
+          <div class="menu-lateral">
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <p>Home</p>
+            </a>
+          </div>
+          <div class="menu-lateral">
+            <a href="#">
+              <i class="fas fa-fire"></i>
+              <p>Trending</p>
+            </a>
+          </div>
+          <div class="menu-lateral">
+            <a href="#">
+              <i class="fas fa-heart"></i>
+              <p>Mas likes</p>
+            </a>
+          </div>
+          <div class="menu-lateral">
+            <a href="#">
+              <i class="fas fa-cog"></i>
+              <p>Ajustes</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTENIDO------------------- -->
+        <section class="contenido">
+          <h2 class="categoria">Ahora en cine</h2>
+          <div class="post">
+            <div class="caja">
+              <div class="detalles">
+                <h3>The Secret Life of Pets</h3>
+                <p>
+                  Gaia es lo mas lindo del mundo y es una pelicula que te recomendamos totalmente verla y sentirte como si la estuvieras
+                  viviendo.
+                </p>
+              </div>
+            </div>
+            <div class="caja">
+              <div class="detalles">
+                <h3>The Secret Life of Pets</h3>
+                <p>
+                  Gaia es lo mas lindo del mundo y es una pelicula que te recomendamos totalmente verla y sentirte como si la estuvieras
+                  viviendo.
+                </p>
+              </div>
+            </div>
+            <div class="caja">
+              <div class="detalles">
+                <h3>The Secret Life of Pets</h3>
+                <p>
+                  Gaia es lo mas lindo del mundo y es una pelicula que te recomendamos totalmente verla y sentirte como si la estuvieras
+                  viviendo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <h2 class="categoria">Aclamados por la critica</h2>
+          <div class="post">
+            <div class="caja">
+              <div class="detalles">
+                <h3>The Secret Life of Pets</h3>
+                <p>
+                  Gaia es lo mas lindo del mundo y es una pelicula que te recomendamos totalmente verla y sentirte como si la estuvieras
+                  viviendo.
+                </p>
+              </div>
+            </div>
+            <div class="caja">
+              <div class="detalles">
+                <h3>The Secret Life of Pets</h3>
+                <p>
+                  Gaia es lo mas lindo del mundo y es una pelicula que te recomendamos totalmente verla y sentirte como si la estuvieras
+                  viviendo.
+                </p>
+              </div>
+            </div>
+            <div class="caja">
+              <div class="detalles">
+                <h3>The Secret Life of Pets</h3>
+                <p>
+                  Gaia es lo mas lindo del mundo y es una pelicula que te recomendamos totalmente verla y sentirte como si la estuvieras
+                  viviendo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
