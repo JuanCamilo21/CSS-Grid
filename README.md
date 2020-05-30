@@ -1,5 +1,5 @@
 # CSS-Grid
-Este blog es el proyecto del [Curso de CSS Grid Layout](https://platzi.com/clases/css-grid-layout/) de la plataforma de aprendizaje [Platzi](https://platzi.com/).
+Estas son las maquetaciones del proyecto del [Curso de CSS Grid Layout](https://platzi.com/clases/css-grid-layout/) de la plataforma de aprendizaje [Platzi](https://platzi.com/).
 Contiene maquetas de paginas como Instagram, Pinterest, Platzi y una simulación de una pagina para ver películas llamada Movie.html. Todas las maquetas estan hechas en HTML y CSS utilizando CSS GRID.
 
 ## Comenzar 🛰
