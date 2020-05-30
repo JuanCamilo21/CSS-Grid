@@ -3,7 +3,7 @@ Estas son las maquetaciones del proyecto del [Curso de CSS Grid Layout](https://
 Contiene maquetas de paginas como Instagram, Pinterest, Platzi y una simulación de una pagina para ver películas llamada Movie.html. Todas las maquetas estan hechas en HTML y CSS utilizando CSS GRID.
 
 ## Comenzar 🛰
-Para visualizar este pryecto lo unico que necesitas es descargar el .zip o hacer un fork del proyecto y abrir el archivo:
+Para visualizar este proyecto lo único que necesitas es descargar el .zip o hacer un fork del proyecto y abrir el archivo:
 - instagram.html si deseas ver el clon de instagram.
 - platzi.html si deseas ver el clon de Platzi.
 - Movies.html si deseas ver la pagina de películas.
